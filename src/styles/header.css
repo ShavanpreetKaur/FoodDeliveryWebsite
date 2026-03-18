@@ -1,0 +1,280 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  top: 0;
+  overflow: visible !important;
+}
+
+@keyframes animation {
+  from { top: -100px; }
+  to { top: 0px; }
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999;
+  box-shadow: 5px 5px 15px -5px #d7d6d6;
+  animation-name: animation;
+  animation-duration: 0.5s;
+  overflow: visible !important;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  width: calc(100% - 60%);
+  object-fit: contain;
+  margin-top: -40px;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  margin-top: -40px;
+  margin-bottom: 0;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #df2020;
+}
+
+.active__menu {
+  color: #df2020 !important;
+}
+
+/* ===== DROPDOWN ===== */
+.nav__dropdown {
+  overflow: visible !important;
+}
+
+.nav__dropdown > span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav__dropdown > span:hover {
+  color: #df2020;
+}
+
+.dropdown__list {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 8px 0;
+  min-width: 190px;
+  z-index: 999999;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.dropdown__item {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+  margin: 2px 8px;
+}
+
+.dropdown__item:hover {
+  background-color: #fff5f5;
+  color: #df2020;
+}
+
+/* ===== CART ===== */
+.cart__icon {
+  position: relative;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #df2020;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-weight: 600;
+  display: none;
+}
+
+.nav__wrapper {
+  overflow: visible !important;
+}
+
+.menu {
+  overflow: visible !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: calc(100% - 70%);
+  }
+
+  .logo h5 {
+    font-size: 0.8rem;
+    margin-top: -15px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+    overflow: visible !important;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    line-height: 20px;
+    overflow-y: auto !important;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .nav__dropdown > span {
+    font-size: 0.9rem;
+  }
+
+  .dropdown__item {
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .show__menu {
+    display: block;
+  }
+
+  .dropdown__list {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    min-width: unset;
+    width: 100%;
+    max-height: unset;
+    overflow-y: visible;
+  }
+}
+
+.header__closeButton {
+  width: fit-content;
+  height: 60px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0rem;
+  margin: 0.5rem 0;
+  display: none;
+}
+
+.header__closeButton span i {
+  font-size: 1.1rem;
+  background: #212245;
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .close__button {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo img {
+    margin-top: -70px !important;
+  }
+
+  .logo h5 {
+    margin-top: -55px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu {
+    width: 100%;
+  }
+}
+
+.close__button {
+  width: fit-content;
+  height: 60px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0rem;
+}
+
+.close__button span i {
+  font-size: 1.1rem;
+  background: #212245;
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
