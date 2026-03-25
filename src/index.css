@@ -42,3 +42,102 @@ h2 {
 section {
   padding: 60px 0px;
 }
+
+/* ===== LIGHT MODE (default) ===== */
+body {
+  background-color: #fff;
+  color: #212245;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== DARK MODE ===== */
+body.dark__mode {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+body.dark__mode .header {
+  background-color: #16213e !important;
+}
+
+body.dark__mode .header__shrink {
+  background-color: #16213e !important;
+  box-shadow: 5px 5px 15px -5px #000 !important;
+}
+
+body.dark__mode .logo h5 {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .menu a {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .menu a:hover {
+  color: #df2020 !important;
+}
+
+body.dark__mode .nav__dropdown > span {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .dropdown__list {
+  background-color: #16213e !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4) !important;
+}
+
+body.dark__mode .dropdown__item {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .dropdown__item:hover {
+  background-color: #0f3460 !important;
+  color: #df2020 !important;
+}
+
+body.dark__mode .product__item {
+  background-color: #16213e !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
+
+body.dark__mode .product__item h5 a {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .contact__form,
+body.dark__mode .contact__info {
+  background-color: #16213e !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .contact__info-item p {
+  color: #aaa !important;
+}
+
+body.dark__mode input,
+body.dark__mode textarea {
+  background-color: #0f3460 !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+body.dark__mode input::placeholder,
+body.dark__mode textarea::placeholder {
+  color: #888 !important;
+}
+
+body.dark__mode .cart {
+  background-color: #16213e !important;
+}
+
+body.dark__mode .cart__container {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+body.dark__mode .hero__section {
+  background-color: #1a1a2e !important;
+}
+
+body.dark__mode .hero__title span {
+  color: #df2020 !important;
+}
