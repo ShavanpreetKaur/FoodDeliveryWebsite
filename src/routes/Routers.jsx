@@ -152,6 +152,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "../pages/Home";
+import AdminOrders from "../pages/AdminOrders";
 import Pizzas from "../pages/Pizzas";
 import PizzaDetails from "../pages/PizzaDetails";
 import Cart from "../pages/Cart";
@@ -176,6 +177,7 @@ const Routers = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/orders" element={<OrderTracking />} />
+      <Route path="/admin" element={<AdminOrders />} />
     </Routes>
   );
 };
