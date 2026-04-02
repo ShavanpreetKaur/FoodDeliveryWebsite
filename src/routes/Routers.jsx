@@ -162,6 +162,7 @@ import CategoryPage from "../pages/CategoryPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import OrderTracking from "../pages/OrderTracking";
+import ProtectedAdminRoute from "../components/ProtectedAdminRoute";
 
 const Routers = () => {
   return (
@@ -178,6 +179,14 @@ const Routers = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/orders" element={<OrderTracking />} />
       <Route path="/admin" element={<AdminOrders />} />
+      <Route
+  path="/admin"
+  element={
+    <ProtectedAdminRoute>
+      <AdminOrders />
+    </ProtectedAdminRoute>
+  }
+/>
     </Routes>
   );
 };
