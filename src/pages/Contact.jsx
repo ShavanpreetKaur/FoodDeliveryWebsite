@@ -45,7 +45,7 @@ const Contact = () => {
     // ✅ Send Email via EmailJS
     emailjs
       .send(
-        "service_4b35qse",
+        "service_mfv8ji5",
         "template_trnxrbv",
         { from_name: name, from_email: email, message: message },
         "Fq7xT4AT4KEdCuVY9"
