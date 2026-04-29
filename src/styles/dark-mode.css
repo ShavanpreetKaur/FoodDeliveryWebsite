@@ -1,0 +1,122 @@
+/* ========== DARK MODE STYLES ========== */
+
+body.dark__mode {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+body.dark__mode .header {
+  background-color: #16213e !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark__mode .header h5,
+body.dark__mode .menu a,
+body.dark__mode .menu span {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .menu a:hover,
+body.dark__mode .menu span:hover {
+  color: #df2020 !important;
+}
+
+body.dark__mode .dropdown__list {
+  background-color: #16213e !important;
+  border: 1px solid #2a2a4a;
+}
+
+body.dark__mode .dropdown__item:hover {
+  background-color: #2a2a4a !important;
+  color: #df2020 !important;
+}
+
+body.dark__mode .cart__badge {
+  background-color: #df2020;
+  color: #fff;
+}
+
+/* Cards & Sections */
+body.dark__mode .product__item {
+  background-color: #16213e !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark__mode .product__item h5 a {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .product__item h5 a:hover {
+  color: #df2020 !important;
+}
+
+/* Cart Sidebar */
+body.dark__mode .cart__container {
+  background-color: #16213e !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .cart__item {
+  background-color: #1a1a2e !important;
+  border-color: #2a2a4a !important;
+}
+
+/* Cart Page & Checkout */
+body.dark__mode table {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode .cart__subtotal {
+  color: #df2020 !important;
+}
+
+/* Footer */
+body.dark__mode footer {
+  background-color: #16213e !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode footer a {
+  color: #aaa !important;
+}
+
+body.dark__mode footer a:hover {
+  color: #df2020 !important;
+}
+
+/* Forms (Login / Register) */
+body.dark__mode input {
+  background-color: #1a1a2e !important;
+  border-color: #2a2a4a !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode input::placeholder {
+  color: #777 !important;
+}
+
+/* Order Tracking & Admin */
+body.dark__mode .order__card,
+body.dark__mode .checkoutMessage {
+  background-color: #16213e !important;
+  color: #e0e0e0 !important;
+}
+
+/* Sections with white background */
+body.dark__mode section {
+  background-color: #1a1a2e !important;
+}
+
+body.dark__mode h1,
+body.dark__mode h2,
+body.dark__mode h3,
+body.dark__mode h4,
+body.dark__mode h5,
+body.dark__mode h6 {
+  color: #e0e0e0 !important;
+}
+
+body.dark__mode p {
+  color: #aaa !important;
+}
